@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class hash {
+  public static void main(String[] args) {
+    HashMap<String, Integer> hm = new HashMap<>();
+    hm.put("India", 10);
+    hm.put("usa", 105);
+    hm.put("China", 100);
+    System.out.println(hm);
+     // uses of get method
+    int population = hm.get("India");
+    System.out.println(population);
+    // checking for key present or not
+    System.out.println(hm.containsKey("India"));
+    System.out.println(hm.containsKey("indonasia"));
+    // remove 
+    System.out.println(hm.remove("usa"));
+    System.out.println(hm);
+     // size of hashmap
+    System.out.println(hm.size());
+    //for find empty
+    System.out.println(hm.isEmpty());
+  }
+
+}
